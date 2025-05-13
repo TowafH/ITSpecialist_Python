@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain 4: Code Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <nav class="bg-blue-700 text-white p-4 fixed w-full top-0">
+        <ul class="flex space-x-4">
+            <li><a href="#lesson1" class="hover:underline">Lesson 1</a></li>
+            <li><a href="#lesson2" class="hover:underline">Lesson 2</a></li>
+            <li><a href="#lesson3" class="hover:underline">Lesson 3</a></li>
+            <li><a href="#lesson4" class="hover:underline">Lesson 4</a></li>
+        </ul>
+    </nav>
+    <div class="pt-16 max-w-4xl mx-auto px-4">
+        <section id="lesson1" class="py-10 border-b border-gray-300">
+            <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 1: Indentation and Whitespace 📘</h2>
+            <p class="mb-2"><strong>Learning Target:</strong> I can use indentation and whitespace to structure my code.</p>
+            <p>Python uses indentation to define blocks of code. Proper indentation is crucial for the code to run correctly.</p>
+            <pre class="bg-gray-100 p-4 rounded"><code>def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Alice")</code></pre>
+            <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+            <p>Write a function that takes a number and prints whether it's even or odd. Make sure to use proper indentation.</p>
+            <div class="bg-white border border-gray-300 rounded p-4">
+                <p class="mb-2 font-semibold">Try it here:</p>
+                <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="lesson2" class="py-10 border-b border-gray-300">
+            <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 2: Writing Comments 📝</h2>
+            <p class="mb-2"><strong>Learning Target:</strong> I can write comments to explain my code.</p>
+            <p>Comments are lines in the code that are ignored by Python but help humans understand the code.</p>
+            <pre class="bg-gray-100 p-4 rounded"><code># This is a comment
+print("Hello, world!")  # This prints a message</code></pre>
+            <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+            <p>Write a small program with at least two comments that explain what each part does.</p>
+            <div class="bg-white border border-gray-300 rounded p-4">
+                <p class="mb-2 font-semibold">Try it here:</p>
+                <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="lesson3" class="py-10 border-b border-gray-300">
+            <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 3: Using Docstrings 📚</h2>
+            <p class="mb-2"><strong>Learning Target:</strong> I can use docstrings to document my functions.</p>
+            <p>Docstrings are special comments used to describe the purpose of a function or module.</p>
+            <pre class="bg-gray-100 p-4 rounded"><code>def add(a, b):
+    """
+    This function adds two numbers.
+    :param a: First number
+    :param b: Second number
+    :return: Sum of a and b
+    """
+    return a + b</code></pre>
+            <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+            <p>Write a function with a docstring that explains what the function does and its parameters.</p>
+            <div class="bg-white border border-gray-300 rounded p-4">
+                <p class="mb-2 font-semibold">Try it here:</p>
+                <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="lesson4" class="py-10 border-b border-gray-300">
+            <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 4: Generating Documentation with <code>pydoc</code> 📖</h2>
+            <p class="mb-2"><strong>Learning Target:</strong> I can generate documentation using <code>pydoc</code>.</p>
+            <p><code>pydoc</code> is a module that automatically generates documentation from docstrings.</p>
+            <pre class="bg-gray-100 p-4 rounded"><code># Run this command in the terminal to generate documentation
+# python -m pydoc -w mymodule</code></pre>
+            <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+            <p>Create a module with functions that have docstrings. Use <code>pydoc</code> to generate the documentation.</p>
+            <div class="bg-white border border-gray-300 rounded p-4">
+                <p class="mb-2 font-semibold">Try it here:</p>
+                <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

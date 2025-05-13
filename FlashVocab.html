@@ -1,0 +1,1190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip-Style Flashcards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 20px;
+        }
+        .card {
+            background-color: #fff;
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            perspective: 1000px;
+        }
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card-front {
+            background-color: #007BFF;
+            color: white;
+        }
+        .card-back {
+            background-color: #FF5733;
+            color: white;
+            transform: rotateY(180deg);
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Flip-Style Flashcards</h1>
+    <div class="container">
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    AND
+                </div>
+                <div class="card-back">
+                    A logical keyword where both sides of the comparison must be true in order for the statement to be true.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Append
+                </div>
+                <div class="card-back">
+                    An act that adds items to the end of a list or writes text to the end of a file.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Arithmetic Operator
+                </div>
+                <div class="card-back">
+                    An operator used to perform basic mathematical operations.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Assignment
+                </div>
+                <div class="card-back">
+                    An event that takes place when a variable is set to be equal to a string, number, Boolean operator, list, or date.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Boolean Variable
+                </div>
+                <div class="card-back">
+                    A type of variable with two possible values: true or false. A Boolean variable is often used to determine a course of action within a program.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Comparison Operator
+                </div>
+                <div class="card-back">
+                    An operator that is used inside Python to compare arguments. Comparison operators include less than, less than or equal to, greater than, or greater than or equal to.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Containment Operator
+                </div>
+                <div class="card-back">
+                    An operator that determines if a value is contained in a set of values.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Dictionary
+                </div>
+                <div class="card-back">
+                    A list of data that stores values in key-value pairs.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Float Variable
+                </div>
+                <div class="card-back">
+                    A type of number variable that uses a decimal as part of its storage.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Identity Operator
+                </div>
+                <div class="card-back">
+                    An operator in Python that is used to determine if two variables share the same memory space.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Immutable
+                </div>
+                <div class="card-back">
+                    In the context of variables, a type of variable that cannot be changed without redefining the variable.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Index
+                </div>
+                <div class="card-back">
+                    The position in which an item is in a list or a character is within a set of characters. The first index value is always 0.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Insert
+                </div>
+                <div class="card-back">
+                    In the context of lists, the act of adding an item to a specified spot within the list.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Integer Variable
+                </div>
+                <div class="card-back">
+                    A type of variable that stores whole numbers.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    List
+                </div>
+                <div class="card-back">
+                    A variable that stores a collection of items in a defined order.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Logical Operator
+                </div>
+                <div class="card-back">
+                    An operator that compares two conditions using keywords and, or, or not.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    NOT
+                </div>
+                <div class="card-back">
+                    The logical keyword that takes a condition set by the user and checks for its opposite.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    OR
+                </div>
+                <div class="card-back">
+                    A logical keyword where only one of the two possibilities needs to be true in an argument for the argument to be true.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Remove
+                </div>
+                <div class="card-back">
+                    In the context of lists, the act of deleting an item from a list.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Set
+                </div>
+                <div class="card-back">
+                    A list of data that stores unique values of data.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Slicing
+                </div>
+                <div class="card-back">
+                    A process that extracts characters from a list, word, or phrase.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    String Variable
+                </div>
+                <div class="card-back">
+                    A type of variable in Python that is used to store items and information.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Tuple
+                </div>
+                <div class="card-back">
+                    A list of data with immutable values.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Variable
+                </div>
+                <div class="card-back">
+                    A container that stores information that can be used elsewhere in code.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Break Statement
+                </div>
+                <div class="card-back">
+                    A statement used to exit a loop of code.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Compound Conditional
+                </div>
+                <div class="card-back">
+                    A type of statement that has two or more conditions separated by logical operators.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Continue Statement
+                </div>
+                <div class="card-back">
+                    A statement used to skip running the rest of an iteration within a loop.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Elif Statement
+                </div>
+                <div class="card-back">
+                    A conditional statement that checks to see if a condition is true based on an if statement's condition not being true.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Else Statement
+                </div>
+                <div class="card-back">
+                    A statement used in conjunction with if and elif statements. An else statement provides an action in case no if or elif conditions are true.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    For Loop
+                </div>
+                <div class="card-back">
+                    A loop that runs a block of code a set number of times.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    If Statement
+                </div>
+                <div class="card-back">
+                    A statement used to check to see if a condition is true, and, if it is, causes a specific action to be performed.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Nested If
+                </div>
+                <div class="card-back">
+                    An if statement that is placed inside of another if statement.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Nested Loop
+                </div>
+                <div class="card-back">
+                    A loop that is placed inside of another loop.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Pass Keyword
+                </div>
+                <div class="card-back">
+                    A keyword that is used as a placeholder for code to be filled in later. The Pass keyword is often used as part of a loop.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    While Loop
+                </div>
+                <div class="card-back">
+                    A loop that runs a block of code so long as a given condition is true.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Append Function
+                </div>
+                <div class="card-back">
+                    In the context of file management, a built-in function that adds content to an existing file.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Close Function
+                </div>
+                <div class="card-back">
+                    In the context of file management, a built-in function that closes a file and frees the memory space the file occupies.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Command-Line Argument
+                </div>
+                <div class="card-back">
+                    A value used to control how a block of code runs via the command line.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Exists Function
+                </div>
+                <div class="card-back">
+                    In the context of file management, a built-in function that checks to see if a file or folder exists.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Open Function
+                </div>
+                <div class="card-back">
+                    A built-in function that opens a file, usually for reading purposes.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Read Function
+                </div>
+                <div class="card-back">
+                    In the context of file management, a built-in function that reads the contents of a file or stream.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Remove Function
+                </div>
+                <div class="card-back">
+                    In the context of file management, a built-in function that deletes a file from a folder.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    string.format
+                </div>
+                <div class="card-back">
+                    A method used to format strings of text and place variables in precise positions within text.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    With Statement
+                </div>
+                <div class="card-back">
+                    A statement block that supports file operations and automatically closes a file when the block of code is complete.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Write Function
+                </div>
+                <div class="card-back">
+                    In the context of file management, a built-in function that writes content to a new file or overwrites an existing file.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Call Signature
+                </div>
+                <div class="card-back">
+                    A line of code that calls a function and, when applicable, provides needed arguments for said function.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Comment
+                </div>
+                <div class="card-back">
+                    A symbol used to get an interpreter to ignore a line of code. Comments are often used to explain code.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Def Keyword
+                </div>
+                <div class="card-back">
+                    A keyword used in Python to begin and define a function.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Default Value
+                </div>
+                <div class="card-back">
+                    A value or item in a function that is set to be constant but can be overridden.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Docstring
+                </div>
+                <div class="card-back">
+                    Also known as a documentation string, a block of code, surrounded by triple quotation marks, that is used to explain what code is doing.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Indentation
+                </div>
+                <div class="card-back">
+                    The formatting of code in which a block of code knows which statements are part of that block, such as actions within an if statement.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Pydoc
+                </div>
+                <div class="card-back">
+                    A feature in Python that acts as a library module. It automatically generates documentation on Python modules or keywords.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Return Keyword
+                </div>
+                <div class="card-back">
+                    A keyword which defines the end of a function and holds a value to be used outside of the function.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    White Space
+                </div>
+                <div class="card-back">
+                    Empty lines of code found in Python. It can be utilized to make code easier to read.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Assert Test
+                </div>
+                <div class="card-back">
+                    A type of unit test that compares two values and returns a True or False based on the result of the comparison.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    assertEqual
+                </div>
+                <div class="card-back">
+                    An assert test that determines whether two values are equal to each other.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    assertIn
+                </div>
+                <div class="card-back">
+                    An assert test that determines whether a value is contained in a set of values.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    assertIs
+                </div>
+                <div class="card-back">
+                    An assert test that determines whether two variables share the same memory space.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    assertIsInstance
+                </div>
+                <div class="card-back">
+                    An assert test that determines whether a variable is an instance of a class.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    assertTrue
+                </div>
+                <div class="card-back">
+                    An assert test that determines whether a statement is true.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Class
+                </div>
+                <div class="card-back">
+                    A framework for a group of objects and methods that help define those objects.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Else
+                </div>
+                <div class="card-back">
+                    In the context of exception handling, the code block that runs if a Try block succeeds.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Except
+                </div>
+                <div class="card-back">
+                    In the context of exception handling, the code block that runs if a Try block fails.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Finally Keyword
+                </div>
+                <div class="card-back">
+                    A block of code that runs regardless of whether a try block was successful.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Function
+                </div>
+                <div class="card-back">
+                    A block of code that can be called upon multiple times within a program.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Logic Error
+                </div>
+                <div class="card-back">
+                    A type of error in Python that occurs when an argument, calculation, or flow is set incorrectly.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Method
+                </div>
+                <div class="card-back">
+                    A function that belongs to a class.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Object
+                </div>
+                <div class="card-back">
+                    A tangible asset used as a building block for an app.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Raise
+                </div>
+                <div class="card-back">
+                    A type of keyword that is used to display an error message when an exception occurs.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Runtime Error
+                </div>
+                <div class="card-back">
+                    An error type that only occurs when an app runs and often results in the app crashing.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Syntax Error
+                </div>
+                <div class="card-back">
+                    An error in programming code that is caused either by a typo or by trying to use an item incorrectly.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Try
+                </div>
+                <div class="card-back">
+                    A block of code that attempts to run without any errors being generated.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Unit Test
+                </div>
+                <div class="card-back">
+                    A test that is done on a small unit of code to see if the code works as intended.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    ceil
+                </div>
+                <div class="card-back">
+                    A math function that returns the next integer up from a decimal number.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    choice
+                </div>
+                <div class="card-back">
+                    A random function that returns one value from a list of values.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Datetime Module
+                </div>
+                <div class="card-back">
+                    A module that provides functionality for dates, times, and date and time formats.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    fabs
+                </div>
+                <div class="card-back">
+                    A math function that measures the absolute distance from zero and is presented as a floating decimal.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    floor
+                </div>
+                <div class="card-back">
+                    A math function that returns an integer portion of a number.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    fmod
+                </div>
+                <div class="card-back">
+                    A math function that returns the modulus for two numbers and is presented as a floating decimal.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    frexp
+                </div>
+                <div class="card-back">
+                    A math function that returns the mantissa and exponent of a number.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Io Module
+                </div>
+                <div class="card-back">
+                    A module that provides functionality for file management.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    isnan
+                </div>
+                <div class="card-back">
+                    A math function that checks to see if a value is a number and returns False if it is a number and True if it is not a number.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    isqrt
+                </div>
+                <div class="card-back">
+                    A math function that returns the integer of a square root of a number.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Math Module
+                </div>
+                <div class="card-back">
+                    A module that provides a means to multiple types of calculations.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    nan
+                </div>
+                <div class="card-back">
+                    An expression that signifies a value is not a number.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    now
+                </div>
+                <div class="card-back">
+                    A date function that returns the current date and time.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Os Module
+                </div>
+                <div class="card-back">
+                    The operating system (os) module allows the user to perform operating system tasks, such as create a folder.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Os.path
+                </div>
+                <div class="card-back">
+                    A piece of the os module, the os.path is used to help users to find files and folders on specific paths.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    pi
+                </div>
+                <div class="card-back">
+                    A math function that returns pi (3.14159).
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    pow
+                </div>
+                <div class="card-back">
+                    A math function that returns one number raised to the power of another number.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    randint
+                </div>
+                <div class="card-back">
+                    A random function that returns an integer between a starting value and an ending value.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    random
+                </div>
+                <div class="card-back">
+                    A function that returns a random number between 0 and 1.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Random Library
+                </div>
+                <div class="card-back">
+                    A library that contains many random number and list-related functions.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    randrange
+                </div>
+                <div class="card-back">
+                    A random function that returns a number between a starting value and one less than the ending value.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    sample
+                </div>
+                <div class="card-back">
+                    A random function that returns a set number of values from a list of values.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    shuffle
+                </div>
+                <div class="card-back">
+                    A random function that reorders a list of values randomly.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    sqrt
+                </div>
+                <div class="card-back">
+                    A math function that returns the square root of a number.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    strftime
+                </div>
+                <div class="card-back">
+                    A date function that formats a date and time as a string, with symbols used to manipulate the format of the string.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    Sys Module
+                </div>
+                <div class="card-back">
+                    A module used to import built-in system functions that can be used in Python.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    trunc
+                </div>
+                <div class="card-back">
+                    A math function that returns the next highest positive integer or the next lowest negative integer for a number.
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    weekday
+                </div>
+                <div class="card-back">
+                    A date function that returns the weekday number for a date, with 1 being Monday.
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>

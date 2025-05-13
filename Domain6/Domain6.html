@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain 6: Operations Using Modules and Tools</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Fixed top navigation bar -->
+    <nav class="bg-blue-700 p-4 fixed w-full top-0 z-10">
+        <div class="container mx-auto">
+            <a href="#lesson1" class="text-white mr-4">Lesson 1: io</a>
+            <a href="#lesson2" class="text-white mr-4">Lesson 2: os</a>
+            <a href="#lesson3" class="text-white mr-4">Lesson 3: os.path</a>
+            <a href="#lesson4" class="text-white mr-4">Lesson 4: sys</a>
+            <a href="#lesson5" class="text-white mr-4">Lesson 5: Math</a>
+            <a href="#lesson6" class="text-white mr-4">Lesson 6: isnan, sqrt, isqrt, and pi</a>
+            <a href="#lesson7" class="text-white mr-4">Lesson 7: datetime</a>
+            <a href="#lesson8" class="text-white mr-4">Lesson 8: Random with Numbers</a>
+            <a href="#lesson9" class="text-white mr-4">Lesson 9: Random with Lists</a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-16 px-4">
+        <!-- Lesson 1: io -->
+        <section id="lesson1" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 1: io 📂</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can use the io module to perform file operations in memory.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Explanation</h3>
+                <p>The io module enables users to store and access data from memory, eliminating the need to work with physical files.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>import io
+
+# Create an in-memory text stream
+text_stream = io.StringIO("Hello, world!")
+
+# Read from the text stream
+print(text_stream.read())</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Try creating an in-memory binary stream and write some data to it.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 2: os -->
+        <section id="lesson2" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 2: os 🖥️</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can use the os module to perform operating system tasks.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Explanation</h3>
+                <p>The os module allows users to perform various operating system-based actions, such as renaming files and executing shell commands.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>import os
+
+# List files in the current directory
+print(os.listdir("."))
+
+# Rename a file
+os.rename("old_file.txt", "new_file.txt")</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Try creating a new directory and listing its contents.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 3: os.path -->
+        <section id="lesson3" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 3: os.path 📂</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can use the os.path module to work with file paths.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Explanation</h3>
+                <p>The os.path module provides methods to check for the existence of a file or directory in a specific location.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>import os.path
+
+# Check if a file exists
+print(os.path.exists("example.txt"))
+
+# Join paths
+print(os.path.join("folder", "file.txt"))</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Try checking if a directory exists and create it if it doesn't.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 4: sys -->
+        <section id="lesson4" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 4: sys 🧾</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can use the sys module to handle system-specific functionalities.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Explanation</h3>
+                <p>The sys module provides access to system-specific functionalities, such as managing files and handling command-line arguments.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>import sys
+
+# Print command-line arguments
+print(sys.argv)
+
+# Exit the program
+sys.exit()</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Try writing a script that takes a command-line argument and prints it.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 5: Math -->
+        <section id="lesson5" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 5: Math 📐</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can use the math module to perform mathematical operations.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Explanation</h3>
+                <p>The math module provides various math functions such as fabs, ceil, floor, trunc, fmod, frexp, and nan.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>import math
+
+# Calculate the square root
+print(math.sqrt(16))
+
+# Calculate the ceiling of a number
+print(math.ceil(4.2))</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Try using the math module to calculate the floor and trunc values of a number.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 6: isnan, sqrt, isqrt, and pi -->
+        <section id="lesson6" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 6: isnan, sqrt, isqrt, and pi 📏</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can use the isnan, sqrt, isqrt, and pi functions from the math module.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Explanation</h3>
+                <p>The math module helps solve complex math problems related to statistics, geometry, trigonometry, and others.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>import math
+
+# Check if a value is NaN
+print(math.isnan(float('nan')))
+
+# Calculate the square root
+print(math.sqrt(25))
+
+# Calculate the integer square root
+print(math.isqrt(25))
+
+# Calculate the value of pi
+print(math.pi)</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Try using the math module to calculate the power of a number using math.pow.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 7: datetime -->
+        <section id="lesson7" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 7: datetime ⏰</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can use the datetime module to work with dates and times.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Explanation</h3>
+                <p>The datetime module provides various methods to work with dates and times, such as now, strftime, and weekday.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>import datetime
+
+# Get the current date and time
+now = datetime.datetime.now()
+print(now)
+
+# Format the date and time
+print(now.strftime("%Y-%m-%d %H:%M:%S"))</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Try using the datetime module to get the name of the current weekday.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 8: Random with Numbers -->
+        <section id="lesson8" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 8: Random with Numbers 🎲</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can use the random module to generate random numbers.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Explanation</h3>
+                <p>The random module offers multiple methods to generate random numbers or values from a given list of values.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>import random
+
+# Generate a random integer
+print(random.randint(1, 10))
+
+# Generate a random number between 0 and 1
+print(random.random())</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Try using the random module to shuffle a list of numbers.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 9: Random with Lists -->
+        <section id="lesson9" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 9: Random with Lists 📋</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can use the random module to work with lists.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Explanation</h3>
+                <p>The random module can also be used with words and phrases, offering functions such as shuffle, choice, and sample.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>import random
+
+# Shuffle a list
+my_list = [1, 2, 3, 4, 5]
+random.shuffle(my_list)
+print(my_list)
+
+# Choose a random element from a list
+print(random.choice(my_list))</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Try using the random module to get a sample of elements from a list.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

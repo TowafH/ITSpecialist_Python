@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain 3: Input/Output Operations</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-700 text-white fixed w-full z-10 top-0 shadow">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between py-4">
+            <div class="flex items-center">
+                <a href="#lesson1" class="text-white text-lg font-semibold hover:text-gray-300 px-4">Lesson 1</a>
+                <a href="#lesson2" class="text-white text-lg font-semibold hover:text-gray-300 px-4">Lesson 2</a>
+                <a href="#lesson3" class="text-white text-lg font-semibold hover:text-gray-300 px-4">Lesson 3</a>
+                <a href="#lesson4" class="text-white text-lg font-semibold hover:text-gray-300 px-4">Lesson 4</a>
+                <a href="#lesson5" class="text-white text-lg font-semibold hover:text-gray-300 px-4">Lesson 5</a>
+                <a href="#lesson6" class="text-white text-lg font-semibold hover:text-gray-300 px-4">Lesson 6</a>
+                <a href="#lesson7" class="text-white text-lg font-semibold hover:text-gray-300 px-4">Lesson 7</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-16 px-4">
+        <section id="lesson1" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 1: File Input and Output 📂</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can open, read, write, and append files in Python.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Opening and Reading Files</h3>
+                <pre class="bg-gray-100 p-4 rounded"><code>with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)</code></pre>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Writing to Files</h3>
+                <pre class="bg-gray-100 p-4 rounded"><code>with open('example.txt', 'w') as file:
+    file.write('Hello, world!')</code></pre>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Appending to Files</h3>
+                <pre class="bg-gray-100 p-4 rounded"><code>with open('example.txt', 'a') as file:
+    file.write('\nAppended text')</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Write a program that:</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Creates a new file and writes some text to it</li>
+                    <li>Reads the content of the file and prints it</li>
+                    <li>Appends additional text to the file</li>
+                </ul>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <!-- Replace with your actual Trinket embed link -->
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="lesson2" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 2: Checking and Deleting Files 📂</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can check if a file exists and delete files in Python.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Checking if a File Exists</h3>
+                <pre class="bg-gray-100 p-4 rounded"><code>import os
+
+if os.path.exists('example.txt'):
+    print('File exists')
+else:
+    print('File does not exist')</code></pre>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Deleting Files</h3>
+                <pre class="bg-gray-100 p-4 rounded"><code>import os
+
+if os.path.exists('example.txt'):
+    os.remove('example.txt')
+    print('File deleted')</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Write a program that:</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Checks if a file exists and prints a message</li>
+                    <li>Deletes the file if it exists</li>
+                </ul>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <!-- Replace with your actual Trinket embed link -->
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="lesson3" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 3: Using the 'with' Statement 📂</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can use the 'with' statement for file operations in Python.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Using 'with' for File Handling</h3>
+                <pre class="bg-gray-100 p-4 rounded"><code>with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Write a program that:</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Uses the 'with' statement to open and read a file</li>
+                    <li>Prints the content of the file</li>
+                </ul>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <!-- Replace with your actual Trinket embed link -->
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="lesson4" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 4: Console Input and Output 🖥️</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can read input from the console and print formatted text in Python.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Reading Input from Console</h3>
+                <pre class="bg-gray-100 p-4 rounded"><code>name = input('Enter your name: ')
+print('Hello, ' + name)</code></pre>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Printing Formatted Text</h3>
+                <pre class="bg-gray-100 p-4 rounded"><code>name = 'Alice'
+age = 30
+print('Name: {}, Age: {}'.format(name, age))
+print(f'Name: {name}, Age: {age}')</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Write a program that:</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Asks the user for their name and age</li>
+                    <li>Prints a message with their name and age using formatted text</li>
+                </ul>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <!-- Replace with your actual Trinket embed link -->
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="lesson5" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 5: Command-Line Arguments 🧾</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can use command-line arguments in Python.</p>
+                <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Using Command-Line Arguments</h3>
+                <pre class="bg-gray-100 p-4 rounded"><code>import sys
+
+if len(sys.argv) > 1:
+    print('Arguments:', sys.argv[1:])
+else:
+    print('No arguments provided')</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Write a program that:</p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Prints the command-line arguments provided to the script</li>
+                </ul>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <!-- Replace with your actual Trinket embed link -->
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

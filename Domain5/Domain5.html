@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Domain 1 - Python Workbook</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+</head>
+<body class="bg-gray-100 text-gray-900 leading-normal tracking-normal">
+    <nav class="bg-blue-700 p-4 fixed w-full z-10 top-0">
+        <div class="container mx-auto">
+            <a href="#syntax-errors" class="text-white mr-4">Syntax Errors</a>
+            <a href="#logic-errors" class="text-white mr-4">Logic Errors</a>
+            <a href="#runtime-errors" class="text-white mr-4">Runtime Errors</a>
+            <a href="#exception-handling" class="text-white mr-4">Exception Handling</a>
+            <a href="#unit-testing" class="text-white">Unit Testing</a>
+        </div>
+    </nav>
+    <div class="container mx-auto mt-16">
+        <section id="syntax-errors" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 1: Syntax Errors 📝</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can recognize and fix syntax errors in Python code.</p>
+                <p>Syntax errors are like spelling and grammar mistakes in writing. They prevent the code from running.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>print("Hello, World!"</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Fix the syntax error in the code above and print a greeting message.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="logic-errors" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 2: Logic Errors 🧠</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can identify and correct logic errors in Python code.</p>
+                <p>Logic errors occur when the code runs but produces incorrect results.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>score = 85
+bonus = 10
+total = score + bonus * 2
+print(total)  # Expected output: 190</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Fix the logic error in the code above to get the expected output.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="runtime-errors" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 3: Runtime Errors 🚨</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can identify and fix runtime errors in Python code.</p>
+                <p>Runtime errors occur while the code is running and can cause the program to crash.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>numbers = [1, 2, 3]
+print(numbers[3])  # IndexError: list index out of range</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Fix the runtime error in the code above to avoid the IndexError.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="exception-handling" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 4: Exception Handling 🔁</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can use try, except, else, and finally to handle exceptions in Python code.</p>
+                <p>Exception handling allows you to manage errors gracefully and keep the program running.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+else:
+    print("Division successful!")
+finally:
+    print("Execution complete.")</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Modify the code above to handle a different type of exception.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="unit-testing" class="py-10 border-b border-gray-300">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 5: Unit Testing 🧪</h2>
+                <p class="mb-2"><strong>Learning Target:</strong> I can write unit tests using the unittest module in Python.</p>
+                <p>Unit testing helps ensure that individual units of code work as expected.</p>
+                <pre class="bg-gray-100 p-4 rounded"><code>import unittest
+
+def add(a, b):
+    return a + b
+
+class TestAddFunction(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+
+if __name__ == '__main__':
+    unittest.main()</code></pre>
+                <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+                <p>Write a unit test for a function that subtracts two numbers.</p>
+                <div class="bg-white border border-gray-300 rounded p-4">
+                    <p class="mb-2 font-semibold">Try it here:</p>
+                    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

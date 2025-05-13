@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Domain 1 - Python Workbook</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <nav class="fixed top-0 left-0 w-full bg-white shadow p-4 z-50">
+  <ul class="flex space-x-4 overflow-x-auto">
+    <li><a href="#lesson1" class="text-indigo-600 font-semibold">L1</a></li>
+    <li><a href="#lesson2" class="text-indigo-600 font-semibold">L2</a></li>
+    <li><a href="#lesson3" class="text-indigo-600 font-semibold">L3</a></li>
+    <li><a href="#lesson4" class="text-indigo-600 font-semibold">L4</a></li>
+    <li><a href="#lesson5" class="text-indigo-600 font-semibold">L5</a></li>
+    <li><a href="#lesson6" class="text-indigo-600 font-semibold">L6</a></li>
+    <li><a href="#lesson7" class="text-indigo-600 font-semibold">L7</a></li>
+    <li><a href="#lesson8" class="text-indigo-600 font-semibold">L8</a></li>
+    <li><a href="#lesson9" class="text-indigo-600 font-semibold">L9</a></li>
+    <li><a href="#lesson10" class="text-indigo-600 font-semibold">L10</a></li>
+    <li><a href="#lesson11" class="text-indigo-600 font-semibold">L11</a></li>
+    <li><a href="#lesson12" class="text-indigo-600 font-semibold">L12</a></li>
+    <li><a href="#lesson13" class="text-indigo-600 font-semibold">L13</a></li>
+     <li><a href="#lesson14" class="text-indigo-600 font-semibold">L14</a></li>
+    <!-- Continue for each lesson -->
+  </ul>
+</nav>
+  <main class="max-w-4xl mx-auto p-6 space-y-10">
+
+<!-- LESSON 1 -->
+<section id="lesson1" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 1: Getting Started</h2>
+  <p class="mb-4 text-gray-700">
+    In Python, we use the <code class="bg-gray-100 px-1 rounded">print()</code> function to display information.
+  </p>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-4">
+    <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+    <p>I can use the <code class="bg-gray-100 px-1 rounded">print()</code> function to display a message.</p>
+  </div>
+
+  <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code>print("Hello, world!")</code></pre>
+
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+    <p class="mb-2">Write a Python statement to print your name and your favorite emoji.</p>
+
+    <textarea placeholder="Type your code here..." class="w-full p-3 border border-gray-300 rounded mb-4"></textarea>
+
+    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+  </div>
+</section>
+
+<!-- LESSON 1.1 -->
+<section id="" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 1.1: Strings and Integers</h2>
+
+  <p class="mb-2 text-gray-700">
+    Strings and integers are data types that can be added to variables within Python code.
+    A variable is a container that stores a value, like a string of text, a number, or other data types.
+  </p>
+  <p class="mb-2 text-gray-700">
+    Strings of text go inside quotation marks and can be used in various ways.
+    An integer is a numeric data type that represents a whole number.
+  </p>
+  <p class="mb-4 text-gray-700">
+    Variable names can contain letters, numbers, and underscores, but not symbols or spaces.
+    Python’s standard naming convention is all lowercase characters with underscores replacing spaces.
+  </p>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-4">
+    <h3 class="text-xl font-semibold text-indigo-800">🎯 Purpose</h3>
+    <p>Understand how to use strings and integers in Visual Studio using Python.</p>
+  </div>
+
+  <h3 class="text-xl font-semibold text-indigo-700 mt-6 mb-2">🛠️ Steps for Completion</h3>
+  <ol class="list-decimal list-inside space-y-2 mb-6 text-gray-700">
+    <li>Open the <code class="bg-gray-100 px-1 rounded">111-str.py</code> file from your Domain 1 Student folder within Visual Studio.</li>
+    <li>Note the two variables with strings containing a first and last name.</li>
+    <li>
+      Add a <code class="bg-gray-100 px-1 rounded">print</code> statement on line 3 to output a full name.
+      <ul class="list-disc list-inside ml-6">
+        <li>You may choose "First Last" or "Last, First" format.</li>
+        <li>If using "Last, First", include a comma between the names.</li>
+      </ul>
+    </li>
+    <li>Run the code to confirm correct output.</li>
+    <li>Python supports single or double quotes around strings.</li>
+    <li>
+      Why does this cause an error?
+      <pre class="bg-gray-100 p-2 rounded mt-2">print('Jason's turn')</pre>
+      <textarea placeholder="Explain the error here..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+    </li>
+    <li>Save the file as <code class="bg-gray-100 px-1 rounded">111-str-completed.py</code>.</li>
+    <li>Open the <code class="bg-gray-100 px-1 rounded">112-numbers.py</code> file.</li>
+    <li>Numbers stored as strings (inside quotes) can't be used in calculations.</li>
+    <li>
+      On line 4, add this to check the data type of <code>number_of_tries</code>:
+      <pre class="bg-gray-100 p-2 rounded mt-2">print(type(number_of_tries))</pre>
+    </li>
+    <li>Run the file to confirm it's an integer.</li>
+    <li>Save it as <code class="bg-gray-100 px-1 rounded">112-numbers-completed.py</code>.</li>
+  </ol>
+
+  <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+</section>
+
+<!-- LESSON: Floats and Booleans -->
+<section id="lesson-floats-bools" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson: Floats and Booleans</h2>
+
+  <p class="mb-4 text-gray-700">
+    Floats and booleans are additional data types in Python. While <strong>integers</strong> represent whole numbers, 
+    <strong>floats</strong> (short for "floating point numbers") are numbers with decimals, like <code>3.14</code> or <code>0.75</code>.
+    The <strong>boolean</strong> (or <code>bool</code>) data type only has two values: <code>True</code> or <code>False</code>. 
+    These are often used to control game logic, such as whether a player is alive or has won.
+  </p>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-4">
+    <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+    <p>I can use floats and booleans in basic operations and identify their data types in Python.</p>
+  </div>
+
+  <h3 class="text-xl font-semibold text-indigo-700 mb-2">⚙️ Steps for Completion</h3>
+  <ol class="list-decimal list-inside space-y-2 text-gray-800 mb-6">
+    <li>Open the <code class="bg-gray-100 px-1 rounded">113-numbers.py</code> file from your Domain 1 Student folder.</li>
+    <li>Observe that the variable <code>multiplier</code> on line 2 is a float.</li>
+    <li>Add a <code>print</code> statement on line 4 that calculates <code>number_of_tries + multiplier</code>. Run the code.</li>
+    <li>
+      What data type is returned from this addition?<br />
+      <textarea placeholder="Your answer..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+    </li>
+    <li>Change the operator to <code>/</code> (division) and run the code again.</li>
+    <li>
+      What data type is returned now?<br />
+      <textarea placeholder="Your answer..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+    </li>
+    <li>Save the updated file as <code class="bg-gray-100 px-1 rounded">113-numbers-completed.py</code>.</li>
+    <li>Floats are useful for tracking scores, currency, and measurements in games.</li>
+    <li>Open the <code class="bg-gray-100 px-1 rounded">114-boolean.py</code> file.</li>
+    <li>Check out the <code>char_life</code> variable. It’s set to <code>True</code>. Run the code to see what it does.</li>
+    <li>Save the file as <code class="bg-gray-100 px-1 rounded">114-boolean-completed.py</code>.</li>
+    <li>⚠️ Reminder: Python is case-sensitive. Booleans must use capital <code>True</code> and <code>False</code>.</li>
+  </ol>
+
+  <h3 class="text-xl font-semibold text-indigo-700 mb-2">📁 Project Details</h3>
+  <ul class="list-disc list-inside mb-6 text-gray-700">
+    <li><strong>Files:</strong> 113-numbers.py, 114-boolean.py</li>
+    <li><strong>Time:</strong> 10–15 minutes</li>
+    <li><strong>Video Reference:</strong> Domain 1 – Data Types: float and bool</li>
+  </ul>
+
+  <h3 class="text-xl font-semibold text-indigo-700 mb-2">📌 Objectives Covered</h3>
+  <ul class="list-disc list-inside text-gray-700">
+    <li>1.1 Evaluate expressions to identify the data types Python assigns to variables</li>
+    <li>1.1.3 float</li>
+    <li>1.1.4 bool</li>
+  </ul>
+
+  <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded mt-6"></iframe>
+</section>
+<!-- PROJECT: Analyze Data Types -->
+<section id="analyze-data-types" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Project: Analyze Data Types</h2>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-4">
+    <h3 class="text-xl font-semibold text-indigo-800">🎯 Purpose</h3>
+    <p>By completing this project, you will strengthen your understanding of Python data types and improve your ability to identify them correctly in code.</p>
+  </div>
+
+  <h3 class="text-xl font-semibold text-indigo-700 mb-2">📝 Steps for Completion</h3>
+  <ol class="list-decimal list-inside space-y-2 text-gray-800 mb-4">
+    <li>Open the <code class="bg-gray-100 px-1 rounded">114-analyze.py</code> file from your Domain 1 Student folder.</li>
+    <li>Review the five <code>print</code> statements in the file.</li>
+    <li>Identify the data type used in each statement and record your answers below:</li>
+  </ol>
+
+  <div class="space-y-4">
+    <div>
+      <label class="block font-medium text-gray-700">a.</label>
+      <textarea placeholder="Enter data type for a..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+    </div>
+    <div>
+      <label class="block font-medium text-gray-700">b.</label>
+      <textarea placeholder="Enter data type for b..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+    </div>
+    <div>
+      <label class="block font-medium text-gray-700">c.</label>
+      <textarea placeholder="Enter data type for c..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+    </div>
+    <div>
+      <label class="block font-medium text-gray-700">d.</label>
+      <textarea placeholder="Enter data type for d..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+    </div>
+    <div>
+      <label class="block font-medium text-gray-700">e.</label>
+      <textarea placeholder="Enter data type for e..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+    </div>
+  </div>
+</section>
+<!-- REFLECT: Data Types -->
+<section id="reflect-data-types" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h3 class="text-xl font-semibold text-indigo-700 mb-3">🔍 Reflect</h3>
+  <p class="mb-4 text-gray-700">
+    Think about what you just explored. Understanding data types is a key part of writing error-free, logical code.
+  </p>
+  <ul class="list-disc list-inside text-gray-800 mb-4">
+    <li>Why is it important to know the data type of a variable?</li>
+    <li>What can go wrong if you assume the wrong type?</li>
+    <li>Which data type do you find easiest to recognize? Which is trickiest?</li>
+  </ul>
+  <div class="mb-4">
+    <label class="block font-medium text-gray-700 mb-1">💭 Your thoughts:</label>
+    <textarea placeholder="Write your reflection here..." class="w-full p-3 border border-gray-300 rounded"></textarea>
+  </div>
+</section>
+
+
+<!-- LESSON 2 -->
+<!-- LESSON 2: Variables -->
+<section id="lesson2" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 2: Variables</h2>
+  <p class="mb-4 text-gray-700">
+    Variables store information in Python. You create a variable by giving it a name and assigning it a value using the <code>=</code> sign.
+  </p>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-4">
+    <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+    <p>I can store and reuse data in variables.</p>
+  </div>
+
+  <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4">
+<code>name = "Ava"
+print("Hi " + name)</code>
+  </pre>
+
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+    <p>Create a variable for your favorite movie or show. Then print a message using it.</p>
+    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+  </div>
+</section>
+
+<!-- LESSON: Data Type Conversion -->
+<section id="lesson-conversion" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson: Data Type Conversion</h2>
+  <ol class="list-decimal list-inside space-y-2 text-gray-800 mb-4">
+    <li>Open the <code class="bg-gray-100 px-1 rounded">121-conversion.py</code> file from your Domain 1 Student folder.</li>
+    <li>Notice that the variable on line 2 stores a user rating (expected to be a whole number). Run the code.</li>
+    <li>Try entering a float value between 1 and 5 in the terminal. Run the code again.</li>
+    <li>What data type is stored in the <code>input</code> variable by default?</li>
+  </ol>
+  <textarea placeholder="Your answer..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+</section>
+
+<!-- LESSON: Indexing -->
+<section id="lesson-indexing" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson: Indexing</h2>
+  <ol class="list-decimal list-inside space-y-2 text-gray-800 mb-4">
+    <li>Open the <code class="bg-gray-100 px-1 rounded">122-indexing.py</code> file from your Domain 1 Student folder.</li>
+    <li>Line 1 lists categories for users to choose from. Line 2 prints the entire list.</li>
+    <li>Copy the code from line 2 and paste it into line 4. Edit it to print only the first category: <code>Early Bronze Age</code>.</li>
+    <li>Change the index value to 2 and run the code again.</li>
+    <li>Which item in the list was returned?</li>
+  </ol>
+  <textarea placeholder="Your answer..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+</section>
+
+
+
+
+    <!-- LESSON 3 -->
+  <!-- LESSON 3: Numbers and Math -->
+<section id="lesson3" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 3: Numbers and Math</h2>
+  <p class="mb-4 text-gray-700">
+    Python can do math just like a calculator. Use <code>+</code> to add, <code>-</code> to subtract, <code>*</code> to multiply, and <code>/</code> to divide.
+  </p>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-4">
+    <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+    <p>I can use variables to perform math operations.</p>
+  </div>
+
+  <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4">
+<code>a = 5
+b = 3
+print(a + b)</code>
+  </pre>
+
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+    <p>Create two variables with numbers and print their product.</p>
+    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+  </div>
+</section>
+
+<!-- PRACTICE: Slicing -->
+<div class="question bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h3 class="text-xl font-semibold text-indigo-700 mb-3">🔍 Slicing</h3>
+  <ol class="list-decimal list-inside text-gray-800 mb-4">
+    <li>Open the <code>123-slicing.py</code> file from your Domain 1 Student folder.</li>
+    <li>Notice the variable <code>serial_number</code> on line 1. It's a series of 16 numbers.</li>
+    <li>Add a <code>print()</code> function on line 2 to show only the first 4 characters.</li>
+    <li>On line 4, print only the last 4 characters.</li>
+    <li>On line 5, print the 8 middle characters.</li>
+  </ol>
+  <div class="answer">
+    <label class="block font-medium text-gray-700 mb-1">✍️ Your answer:</label>
+    <textarea class="w-full p-3 border border-gray-300 rounded"></textarea>
+  </div>
+</div>
+
+<!-- PRACTICE: Data Structures -->
+<div class="question bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h3 class="text-xl font-semibold text-indigo-700 mb-3">📦 Data Structures</h3>
+  <ol class="list-decimal list-inside text-gray-800 mb-4">
+    <li>Strings are a type of data structure because they are collections of characters.</li>
+    <li>Match each code example to the correct data structure:</li>
+  </ol>
+  <ul class="list-none text-gray-700 mb-4">
+    <li><strong>A.</strong> Dictionary</li>
+    <li><strong>B.</strong> Set</li>
+    <li><strong>C.</strong> Tuple</li>
+  </ul>
+  <div class="answer">
+    <label class="block font-medium text-gray-700 mb-1">✍️ Your answer:</label>
+    <textarea class="w-full p-3 border border-gray-300 rounded"></textarea>
+  </div>
+</div>
+
+
+    <!-- LESSON 4 -->
+<!-- LESSON: Lists and Their Operations -->
+<section id="lesson4" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson: Lists and Their Operations</h2>
+
+  <p class="mb-4 text-gray-700">
+    A list is a collection of items stored in a specific order. Instead of creating a separate variable for each value, you can store them all in one list. Lists can grow and change using built-in methods like <code>.append()</code> and <code>.insert()</code>.
+  </p>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-6">
+    <h3 class="text-xl font-semibold text-indigo-800 mb-2">🎯 Learning Target</h3>
+    <p>I can store and manipulate multiple values using lists in Python.</p>
+  </div>
+
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn: Thinking About Lists</h3>
+    <p class="mb-2">In the code below, each value is stored in a separate variable. Why might someone do this instead of using a list?</p>
+    <pre class="bg-gray-100 p-4 rounded-md text-sm mb-2">
+<code>city1 = "Dallas"
+city2 = "Austin"
+city3 = "Houston"</code>
+    </pre>
+    <div class="answer mb-4">
+      <label class="block font-medium text-gray-700 mb-1">✍️ Your answer:</label>
+      <textarea class="w-full p-3 border border-gray-300 rounded" rows="3"></textarea>
+    </div>
+  </div>
+
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">🛠 Try It: Modify the Code</h3>
+    <ol class="list-decimal list-inside text-gray-800 space-y-2">
+      <li>Open <code>126-list_operations.py</code> from your Domain 1 Student folder.</li>
+      <li>Use <code>append()</code> to add <code>"Sacramento"</code> to the <code>capitals</code> list. Run the code.</li>
+      <li>Use <code>insert()</code> to place <code>"Little Rock"</code> before <code>"Sacramento"</code>. Rerun the code.</li>
+      <li>What is the object and method in <code>capitals.append("Sacramento")</code>?
+        <ul class="list-disc list-inside ml-4">
+          <li>Object: <span class="font-semibold text-gray-600">______</span></li>
+          <li>Method: <span class="font-semibold text-gray-600">______</span></li>
+        </ul>
+      </li>
+      <li>Save the file as <code>126-list_operations-completed.py</code>.</li>
+    </ol>
+  </div>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-6">
+    <h3 class="text-xl font-semibold text-indigo-800 mb-2">🧠 Deeper Thinking</h3>
+    <ol class="list-decimal list-inside text-gray-800 space-y-2">
+      <li>Why does <code>"Little Rock"</code> appear twice when you run the program?</li>
+      <li>What are two ways you could fix this?
+        <ul class="list-disc list-inside ml-4">
+          <li>a. <span class="font-semibold text-gray-600">______</span></li>
+          <li>b. <span class="font-semibold text-gray-600">______</span></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">🧪 Practice and Analyze</h3>
+    <ol class="list-decimal list-inside text-gray-800 space-y-2">
+      <li>Open <code>126-analyze.py</code>.</li>
+      <li>What will the <code>print()</code> statement on line 2 output?</li>
+      <li>What kind of data structure is used on line 4?</li>
+      <li>How would you change the <code>coins</code> list to use <code>"bronze"</code> instead of <code>"platinum"</code>?</li>
+    </ol>
+  </div>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-6">
+    <h3 class="text-xl font-semibold text-indigo-800 mb-2">📂 Project Summary</h3>
+    <ul class="list-disc list-inside text-gray-800">
+      <li><strong>Files:</strong> 126-list_operations.py, 126-analyze.py</li>
+      <li><strong>Estimated Time:</strong> 10–15 minutes</li>
+      <li><strong>Objectives:</strong>
+        <ul class="list-disc list-inside ml-4">
+          <li>1.2.5 Use lists to store data</li>
+          <li>1.2.6 Perform operations on lists</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="bg-yellow-50 p-4 rounded-md">
+    <h3 class="text-lg font-semibold text-yellow-700">📌 Notes</h3>
+    <ul class="list-disc list-inside text-gray-800">
+      <li>Append: <code>capitals.append("Sacramento")</code></li>
+      <li>Insert before: <code>capitals.insert(3, "Little Rock")</code></li>
+      <li>Reinforce that <code>.</code> accesses a method of the object before it.</li>
+      <li>Have You should  verbalize how list operations affect code flow and output.</li>
+    </ul>
+  </div>
+</section>
+
+
+    <!-- LESSON 5 -->
+
+   <!-- LESSON 5: String + Number -->
+<section id="lesson5" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 5: String + Number</h2>
+  <p class="mb-4 text-gray-700">
+    You can use <code>str()</code> to convert numbers into strings so they can be combined with text.
+  </p>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-4">
+    <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+    <p>I can display numbers in sentences using <code>str()</code>.</p>
+  </div>
+
+  <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4">
+<code>age = 12
+print("I am " + str(age) + " years old.")</code>
+  </pre>
+
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+    <p>Create a variable for a number, convert it to a string, and print it in a sentence.</p>
+    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+  </div>
+</section>
+
+<!-- LESSON: Assignment, Comparison, and Logical Operators -->
+<section id="lesson-operators" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson: Assignment, Comparison & Logical Operators</h2>
+
+  <!-- ASSIGNMENT OPERATORS -->
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">🟢 Assignment Operators</h3>
+    <p class="text-gray-700 mb-4">
+      Operators perform calculations and evaluate conditions. The six main types in Python are arithmetic, containment, comparison, identity, logical, and assignment. Assignment operators are used to set values to variables.
+    </p>
+
+    <div class="bg-indigo-50 p-4 rounded-md mb-4">
+      <h4 class="text-lg font-semibold text-indigo-800 mb-1">🎯 Purpose</h4>
+      <p>Understand how assignment operators work and in what sequence they are executed.</p>
+    </div>
+
+    <h4 class="font-semibold text-gray-800 mb-2">📝 Steps for Completion</h4>
+    <ol class="list-decimal list-inside text-gray-800 mb-4">
+      <li>Name the six types of operators in the order of execution.</li>
+      <li>Review the code and answer the following:
+        <ul class="list-disc list-inside ml-6">
+          <li>What will happen when this code is run?</li>
+          <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4">
+<code>x = 5
+x += 3
+print("x is now:", x)</code>
+</pre>
+        </ul>
+      </li>
+    </ol>
+
+    <div class="bg-yellow-50 p-4 rounded-md">
+      <h4 class="text-lg font-semibold text-yellow-700 mb-1">📌 Notes</h4>
+      <ul class="list-disc list-inside text-gray-800">
+        <li>Explain that variables take the most recent value assigned.</li>
+        <li>The variable on the left side of <code>=</code> is set to the value on the right side.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- COMPARISON OPERATORS -->
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">🟣 Comparison Operators</h3>
+    <p class="text-gray-700 mb-4">
+      Comparison operators compare two values: equal to, not equal to, less than, greater than, less than or equal to, and greater than or equal to. They help determine whether a condition is met.
+    </p>
+
+    <div class="bg-indigo-50 p-4 rounded-md mb-4">
+      <h4 class="text-lg font-semibold text-indigo-800 mb-1">🎯 Purpose</h4>
+      <p>Understand how Python uses comparison operators to evaluate expressions.</p>
+    </div>
+
+    <h4 class="font-semibold text-gray-800 mb-2">📝 Steps for Completion</h4>
+    <ol class="list-decimal list-inside text-gray-800 mb-4">
+      <li>What type of value do comparisons return?</li>
+      <li>In what sequence are comparisons evaluated?</li>
+      <li>What happens if part of a comparison is false?</li>
+    </ol>
+    <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4">
+<code>a = 10
+b = 20
+print(a == b)   # False
+print(a < b)    # True</code>
+</pre>
+
+  </div>
+
+  <!-- LOGICAL OPERATORS -->
+  <div>
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">🔵 Logical Operators</h3>
+    <p class="text-gray-700 mb-4">
+      Logical operators in Python include <code>not</code>, <code>and</code>, and <code>or</code>. These operators follow a specific order of precedence and are essential for controlling flow based on multiple conditions.
+    </p>
+
+    <div class="bg-indigo-50 p-4 rounded-md mb-4">
+      <h4 class="text-lg font-semibold text-indigo-800 mb-1">🎯 Purpose</h4>
+      <p>Learn how logical operators influence the flow of logic in code.</p>
+    </div>
+
+    <h4 class="font-semibold text-gray-800 mb-2">📝 Steps for Completion</h4>
+    <ol class="list-decimal list-inside text-gray-800 mb-4">
+      <li>List the logical keywords in order of precedence:
+        <ul class="list-disc list-inside ml-6">
+          <li>a. <span class="font-semibold text-gray-600">______</span></li>
+          <li>b. <span class="font-semibold text-gray-600">______</span></li>
+          <li>c. <span class="font-semibold text-gray-600">______</span></li>
+        </ul>
+      </li>
+      <li>Review the code and answer the following:
+        <ul class="list-disc list-inside ml-6">
+          <li>What will happen when this code is run?</li>
+        </ul>
+      </li>
+    </ol>
+
+    <div class="bg-yellow-50 p-4 rounded-md">
+      <h4 class="text-lg font-semibold text-yellow-700 mb-1">📌 Notes</h4>
+      <ul class="list-disc list-inside text-gray-800">
+        <li>If time permits, share additional examples of logical operators in Python code.</li>
+      </ul>
+    </div>
+    <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4">
+<code>x = 7
+print(x > 5 and x < 10)  # True
+print(not x == 7)        # False</code>
+</pre>
+
+  </div>
+</section>
+
+
+   <section id="lesson6" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 6: Input from the User</h2>
+  <p class="mb-4 text-gray-700">You can ask the user questions using the <code>input()</code> function. The user's response is stored as a string.</p>
+  
+  <div class="bg-indigo-50 p-4 rounded-md mb-4">
+    <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+    <p>I can get and use input from a user in a program.</p>
+  </div>
+  
+  <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code>name = input("What is your name? ")
+print("Hello, " + name + "!")</code></pre>
+  
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+    <p>Ask the user their favorite color and print a message with their answer.</p>
+    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+  </div>
+</section>
+
+<section id="arithmetic" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Arithmetic</h2>
+  <p>Arithmetic has an order of operations when performing calculations. This order ensures that calculations are performed the same way every time to provide consistent results.</p>
+  
+  <h3>Purpose</h3>
+  <p>Upon completing this project, you will better understand the order of operations.</p>
+  
+  <h3>Steps for Completion</h3>
+  <ol>
+    <li>List the order of operations from first to last.
+      <ul>
+        <li>a.</li>
+        <li>b.</li>
+        <li>c.</li>
+        <li>d.</li>
+        <li>e.</li>
+        <li>f.</li>
+      </ul>
+    </li>
+    <li>Open the <code>134-arithmetic.py</code> file from your Domain 1 Student folder.</li>
+    <li>Run the code. What is the result?</li>
+  </ol>
+  
+  <h3>Project Details</h3>
+  <p><strong>Project file:</strong> 134-arithmetic.py</p>
+  <p><strong>Estimated completion time:</strong> 10 minutes</p>
+  <p><strong>Video reference:</strong> Domain 1 Topic: Sequence of Execution Subtopic: Arithmetic Order</p>
+  <p><strong>Objectives covered:</strong>
+    <ul>
+      <li>1 Operations Using Data Types and Operators</li>
+      <li>1.3 Determine the sequence of execution based on operator precedence</li>
+      <li>1.3.4 Arithmetic</li>
+    </ul>
+  </p>
+  
+  <h3>Notes</h3>
+  <p>You should completed projects and show an opening parenthesis added before the base variable and a closing parenthesis added after the bonus variable.</p>
+
+  <h3>Steps for Completion (Continued)</h3>
+  <ol>
+    <li>Edit the code so that the base and bonus variables are added together before being multiplied by the rank variable.</li>
+    <li>Run the code. What is the result?</li>
+    <li>Save the file as <code>134-arithmetic-completed</code>.</li>
+  </ol>
+</section>
+
+<section id="identity-operator" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Identity Operator</h2>
+  <p>Two variables can appear equal, but one can use the identity operator to determine if they are truly the same. The identity operator determines if two variables share the same memory location.</p>
+  
+  <h3>Purpose</h3>
+  <p>Upon completing this project, you will better understand the identity operator.</p>
+  
+  <h3>Steps for Completion</h3>
+  <ol>
+    <li>The <strong>is</strong> keyword is used to identify whether two variables share the same memory space.</li>
+    <li>In the order of operations, the identity operation happens before logical and assignment operations but after arithmetic and comparison operations.</li>
+    <li>If two variables share the same memory space, they will have the same values.</li>
+  </ol>
+</section>
+
+<section id="containment-operator" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Containment Operator</h2>
+  <p>Containment is often used for lists, sets, tuples, and dictionaries. The containment operator checks whether a value is contained within a list of values.</p>
+  
+  <h3>Purpose</h3>
+  <p>Upon completing this project, you will better understand the containment operator.</p>
+  
+  <h3>Steps for Completion</h3>
+  <ol>
+    <li>Containment operations happen after identity operations.</li>
+    <li>Review the code, then answer the question about the containment operator.</li>
+  </ol>
+
+  <h3>Project Details</h3>
+  <p><strong>Project file:</strong> N/A</p>
+  <p><strong>Estimated completion time:</strong> 5 minutes</p>
+  <p><strong>Video reference:</strong> Domain 1 Topic: Sequence of Execution Subtopic: Containment Order</p>
+  <p><strong>Objectives covered:</strong>
+    <ul>
+      <li>1 Operations Using Data Types and Operators</li>
+      <li>1.3 Determine the sequence of execution based on operator precedence</li>
+      <li>1.3.6 Containment (in)</li>
+    </ul>
+  </p>
+
+  <h3>Notes</h3>
+  <p>Ensure You understand why one may want to use a containment operator.</p>
+
+  <h3>Questions</h3>
+  <ul>
+    <li>What result will the code on line 3 output?</li>
+  </ul>
+</section>
+
+<section id="review-1-3" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Review 1.3</h2>
+  <h3>Purpose</h3>
+  <p>Upon completing this project, you will better understand the order of operations across categories of operators and within a category of operators.</p>
+  
+  <h3>Steps for Completion</h3>
+  <ol>
+    <li>What is the order for the six types of operators?
+      <ul>
+        <li>a.</li>
+        <li>b.</li>
+        <li>c.</li>
+        <li>d.</li>
+        <li>e.</li>
+        <li>f.</li>
+      </ul>
+    </li>
+    <li>What supersedes all operators in the order of operations?
+      <ul>
+        <li>a.</li>
+      </ul>
+    </li>
+    <li>What is the order of preference for logical operators?
+      <ul>
+        <li>a.</li>
+        <li>b.</li>
+        <li>c.</li>
+      </ul>
+    </li>
+    <li>What is the order of operations for arithmetic operators?
+      <ul>
+        <li>a.</li>
+        <li>b.</li>
+        <li>c.</li>
+        <li>d.</li>
+        <li>e.</li>
+        <li>f.</li>
+      </ul>
+    </li>
+  </ol>
+  
+  <h3>Project Details</h3>
+  <p><strong>Project file:</strong> N/A</p>
+  <p><strong>Estimated completion time:</strong> 15 minutes</p>
+  <p><strong>Video reference:</strong> Domain 1 Topic: Sequence of Execution Subtopic: Containment Order; Review on 1.3</p>
+  <p><strong>Objectives covered:</strong>
+    <ul>
+      <li>1 Operations Using Data Types and Operators</li>
+      <li>1.3 Determine the sequence of execution based on operator precedence</li>
+    </ul>
+  </p>
+
+  <h3>Notes</h3>
+  <p>Make sure You understand not only the order of operations but how to analyze code using order of operations to either generate a result or see how a result was found.</p>
+</section>
+
+
+
+    <!-- LESSON 7 -->
+    <section  id="lesson7" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 7: Integers from Input</h2>
+      <p class="mb-4 text-gray-700">You can turn input into a number using <code>int()</code>. This allows you to do math with it.</p>
+      <div class="bg-indigo-50 p-4 rounded-md mb-4">
+        <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+        <p>I can collect numbers from a user and use them in calculations.</p>
+      </div>
+      <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code>age = int(input("How old are you? "))
+print("Next year you’ll be " + str(age + 1))</code></pre>
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+        <p>Ask the user how many siblings they have. Then print double that number in a sentence.</p>
+        <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+      </div>
+    </section>
+
+    <!-- LESSON 8 -->
+    <section  id="lesson8"  class="bg-white p-6 rounded-xl shadow-lg mb-10">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 8: More Math</h2>
+      <p class="mb-4 text-gray-700">You can perform different operations like subtraction, multiplication, division, and remainders using <code>-</code>, <code>*</code>, <code>/</code>, and <code>%</code>.</p>
+      <div class="bg-indigo-50 p-4 rounded-md mb-4">
+        <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+        <p>I can perform and understand different types of math operations in Python.</p>
+      </div>
+      <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code>apples = 9
+friends = 2
+print("Each friend gets", apples // friends, "apples")</code></pre>
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+        <p>Ask the user how many cookies they have and how many friends they’ll share with. Show how many each friend gets using division.</p>
+        <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+      </div>
+    </section>
+
+    <!-- LESSON 9 -->
+    <section  id="lesson9"  class="bg-white p-6 rounded-xl shadow-lg mb-10">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 9: Using Comments</h2>
+      <p class="mb-4 text-gray-700">Use <code>#</code> to add comments. These lines are ignored by Python but help humans understand the code.</p>
+      <div class="bg-indigo-50 p-4 rounded-md mb-4">
+        <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+        <p>I can use comments in my code to explain what it does.</p>
+      </div>
+      <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code># This line prints a greeting
+print("Hello!")</code></pre>
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+        <p>Write a small program with at least two comments that explain what each part does.</p>
+        <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+      </div>
+    </section>
+<!-- LESSON 10 -->
+  <section id="lesson10"   class="bg-white p-6 rounded-xl shadow-lg mb-10">
+    <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 10: Syntax and Errors</h2>
+    <p class="mb-4 text-gray-700">Python will give an error if it doesn’t understand your code. These are called <strong>syntax errors</strong>.</p>
+    <div class="bg-indigo-50 p-4 rounded-md mb-4">
+      <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+      <p>I can recognize and fix syntax errors in Python code.</p>
+    </div>
+    <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code># Incorrect: missing parenthesis
+print("Hello"</code></pre>
+    <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code># Fixed version
+print("Hello")</code></pre>
+    <div class="mb-6">
+      <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+      <p>Fix this line of code with a syntax error:</p>
+      <pre class="bg-gray-100 p-4 rounded-md text-sm"><code>print("What's up"</code></pre>
+      <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+    </div>
+  </section>
+
+  <!-- LESSON 11 -->
+  <section id="lesson11"   class="bg-white p-6 rounded-xl shadow-lg mb-10">
+    <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 11: Debugging</h2>
+    <p class="mb-4 text-gray-700">Sometimes your code runs but doesn’t do what you expect. Use <code>print()</code> to see what’s happening and find bugs.</p>
+    <div class="bg-indigo-50 p-4 rounded-md mb-4">
+      <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+      <p>I can use print statements to debug and fix code.</p>
+    </div>
+    <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code>num = 10
+# We expect this to print 20, but it prints 30!
+print(num + 20)</code></pre>
+    <div class="mb-6">
+      <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+      <p>Use <code>print()</code> to figure out what's wrong in a small buggy program. Then fix it.</p>
+      <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+    </div>
+  </section>
+
+  <!-- LESSON 12 -->
+  <section id="lesson12"   class="bg-white p-6 rounded-xl shadow-lg mb-10">
+    <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 12: Order of Operations</h2>
+    <p class="mb-4 text-gray-700">Python follows PEMDAS rules for math: parentheses, exponents, multiplication/division, addition/subtraction.</p>
+    <div class="bg-indigo-50 p-4 rounded-md mb-4">
+      <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+      <p>I can use parentheses to control the order of operations in math expressions.</p>
+    </div>
+    <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code>print(3 + 2 * 4)      # 11
+print((3 + 2) * 4)    # 20</code></pre>
+    <div class="mb-6">
+      <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+      <p>Write two print statements: one with parentheses and one without, using different math operations.</p>
+      <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+    </div>
+  </section>
+
+  <!-- LESSON 13 -->
+  <section id="lesson13"    class="bg-white p-6 rounded-xl shadow-lg mb-10">
+    <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 13: Mini-Project</h2>
+    <p class="mb-4 text-gray-700">Let's combine everything we’ve learned into a short interactive project.</p>
+    <div class="bg-indigo-50 p-4 rounded-md mb-4">
+      <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+      <p>I can write a program that uses input, variables, math, and output.</p>
+    </div>
+    <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code>name = input("What's your name? ")
+birth_year = int(input("What year were you born? "))
+age = 2025 - birth_year
+print("Hi " + name + "! You are " + str(age) + " years old.")</code></pre>
+    <div class="mb-6">
+      <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+      <p>Make your own short program! Use input, math, and strings to tell the user something fun or helpful.</p>
+      <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+    </div>
+  </section>
+      <!-- LESSON 14 -->
+    <section id="lesson14" class="py-10 border-b border-gray-300">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">Lesson 14: More Data Types and String Slicing</h2>
+
+    <p class="mb-2"><strong>Learning Target:</strong> I can use booleans, floats, the modulus operator, and slice strings in Python.</p>
+
+    <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Booleans</h3>
+    <p>Booleans represent truth values: <code>True</code> or <code>False</code>. They are often used in conditions.</p>
+    <pre class="bg-gray-100 p-4 rounded"><code>is_raining = True
+print("Bring an umbrella:", is_raining)</code></pre>
+
+    <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Floats</h3>
+    <p>Floats are numbers with decimal points.</p>
+    <pre class="bg-gray-100 p-4 rounded"><code>price = 4.99
+tax = 0.40
+total = price + tax
+print("Total:", total)</code></pre>
+
+    <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Modulus Operator</h3>
+    <p>The modulus operator <code>%</code> returns the remainder of a division.</p>
+    <pre class="bg-gray-100 p-4 rounded"><code>print(10 % 3)  # Output: 1
+print(15 % 4)  # Output: 3</code></pre>
+
+    <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">String Slicing</h3>
+    <p>You can extract parts of a string using slicing.</p>
+    <pre class="bg-gray-100 p-4 rounded"><code>word = "Python"
+print(word[0:3])  # Output: Pyt
+print(word[2:])   # Output: thon
+print(word[-1])   # Output: n</code></pre>
+
+    <h3 class="text-lg font-semibold mt-6 mb-2 text-green-700">Your Turn!</h3>
+    <p>Try writing a program that:</p>
+    <ul class="list-disc list-inside mb-4">
+      <li>Defines a float variable for a meal price</li>
+      <li>Calculates tax using a float</li>
+      <li>Prints whether the total is over \$10 using a boolean</li>
+      <li>Prints the first 3 letters of a string using slicing</li>
+    </ul>
+
+    <div class="bg-white border border-gray-300 rounded p-4">
+      <p class="mb-2 font-semibold">Try it here:</p>
+      <!-- Replace with your actual Trinket embed link -->
+      <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+  </main>
+</body>
+</html>

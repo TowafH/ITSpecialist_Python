@@ -1,4 +1,4 @@
-char_life = true
+char_life = True # Booleans must be capitalized
 score = 0
 if char_life == False:
     print ("game over")

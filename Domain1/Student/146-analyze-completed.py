@@ -1,7 +1,7 @@
 x = 500
 y = 200
 z = (1,2,3,5,8)
-print (x % 6) #What will this result be? 2
+print (x % 6) # What will this result be? 2
 
 x *= 3
 print(x) # What will this result be? 1500

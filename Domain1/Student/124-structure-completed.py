@@ -23,7 +23,7 @@ print(coins)
 #Set
 '''
 - An unordered collection of unique elements
-- Mutable, items within a set can be added or removed
+- MUTABLE, items within a set can be added or removed
 - Created using braces --> {}
 - An empty set must be created using set() because {} will create an empty dictionary
 - NO DUPLICATE VALUES **
@@ -39,11 +39,11 @@ print(regions)
 #Tuple
 '''
 - An ordered collection of items
-- Immutable, elements within tuple CANNOT be changed
+- IMMUTABLE, elements within tuple CANNOT be changed
 - Created using parantheses --> ()
 - Tupes can contain elements of different data types
 - A single element tupe requires a comma --> tuple_1_element = (1,)
 - CAN HAVE DUPLICATE VALUES
 '''
 char1_name=("Humphrey",'Cat')
-char1_name[1]= "Dog" # Element's in a TUPLE cannot be changed
+char1_name[1] = "Dog" # It will not run because element's in a TUPLE cannot be changed

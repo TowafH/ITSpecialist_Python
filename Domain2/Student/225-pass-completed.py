@@ -1,8 +1,7 @@
 coins = ('Bronze','Silver','Platinum','Gold')
-scepter = False
 for coin in coins:
 
     if coin == 'Platinum':
-        print('Congratulations! The platinum coin will move you to the next level!')
+        pass # Placeholder keyword
         continue
     print ('You possess a', coin, 'coin.')

@@ -7,7 +7,7 @@ while game_lives <= 3:
         # Loop to print positions achieved during lives
         print(f"You have reached position {i} in game life {game_lives}")
     if game_state == True:
-        # game_lives +=1
+        game_lives +=1
         # Adding a hashtag symbol to line 10 prevents the games_lives from being incremented
 print("Thank you for playing.")
 

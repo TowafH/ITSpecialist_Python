@@ -1,3 +1,10 @@
+# Use Bash: python3 -m pydoc datetime
+# 3a. The first line under classes reads "builtins.object"
+
+# 5. The command below will send the documentation into a .txt
+# python3 -m pydoc > datetime_me.txt
+
+
 Help on module datetime:
 
 NAME

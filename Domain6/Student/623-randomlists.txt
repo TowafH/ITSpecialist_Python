@@ -1,0 +1,3 @@
+a. random.sample() - Returns multiple random values from a list.
+b. random.shuffle() - Rearranges the order of a list.
+c. random.choice() - Chooses a value, at random, from a list of values

@@ -1,0 +1,5 @@
+a. math.ceil() - Returns the next integer up after a decimal number.
+b. math.fabs() - Returns a number’s absolute distance from zero.
+c. math.floor() - Returns an integer without a decimal number.
+d. math.fmod() - Returns the modulus, also known as a remainder, from dividing two numbers in floating
+decimal format.
